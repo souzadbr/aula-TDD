@@ -28,4 +28,55 @@ public class CalculadoraTest {
 
         Assert.assertEquals(-6, resultado);
     }
+
+    @Test
+    public void testarSubtrairDeDoisNumerosNegativosCaminhoPositivo(){
+        Calculadora calculadora = new Calculadora();
+        int resultado = calculadora.subtrair(-2, -2);
+
+        Assert.assertEquals(0, resultado);
+    }
+
+    @Test
+    public void testarSubtrairDeDoisNumerosPositivosCaminhoPositivo(){
+        Calculadora calculadora = new Calculadora();
+        int resultado = calculadora.subtrair(2, 2);
+
+        Assert.assertEquals(0, resultado);
+    }
+
+    @Test
+    public void testarDividirDeDoisNumerosPositivosCaminhoPositivo(){
+        Calculadora calculadora = new Calculadora();
+        int resultado = calculadora.dividir(4, 2);
+
+        Assert.assertEquals(2, resultado);
+    }
+
+    @Test
+    public void testarDividirDeDoisNumerosNegativosCaminhoPositivo(){
+        Calculadora calculadora = new Calculadora();
+        int resultado = calculadora.dividir(-4, -2);
+
+        Assert.assertEquals(2, resultado);
+    }
+
+    @Test
+    public void testarMultiplicarDeDoisNumerosPositivosCaminhoPositivo(){
+        Calculadora calculadora = new Calculadora();
+        int resultado = calculadora.multiplicar(4, 2);
+
+        Assert.assertEquals(8, resultado);
+    }
+
+    @Test
+    public void testarMultiplicarDeDoisNumerosNegativosCaminhoPositivo(){
+        Calculadora calculadora = new Calculadora();
+        int resultado = calculadora.multiplicar(-2, -2);
+
+        Assert.assertEquals(4, resultado);
+    }
+
+
+
 }

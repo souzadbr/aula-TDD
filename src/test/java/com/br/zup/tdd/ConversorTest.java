@@ -16,5 +16,8 @@ public class ConversorTest {
     public void testarMetodoDeConversaoNumerosCaminhoNegativo(){
         Assert.assertThrows(RuntimeException.class, ()->{new Conversor().converterParaNumeroRoman(-5478);
         });
+
+        //lambda execulta o codigo de maneira isolada. Primeiro o que esperamos, no caso a exception e depois
+        //o que vai ser execultado
     }
 }

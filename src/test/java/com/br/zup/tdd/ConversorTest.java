@@ -12,5 +12,9 @@ public class ConversorTest {
         Assert.assertEquals("VCDLXXVIII",resultado);
     }
 
-
+    @Test
+    public void testarMetodoDeConversaoNumerosCaminhoNegativo(){
+        Assert.assertThrows(RuntimeException.class, ()->{new Conversor().converterParaNumeroRoman(-5478);
+        });
+    }
 }
